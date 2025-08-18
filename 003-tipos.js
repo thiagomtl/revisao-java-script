@@ -43,3 +43,8 @@ function ExibeDados(){
 }
 
 ExibeDados();
+
+console.log('');
+console.log('Tipo da Variável: ExibeDados');
+console.log(typeof(ExibeDados));
+console.log(Array.isArray(ExibeDados));
