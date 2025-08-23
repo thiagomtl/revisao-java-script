@@ -20,3 +20,10 @@ if (validaIdade == true){
 /*if (isNaN(idade)){
     console.log(`${nome} insira um valor numérico na idade!`);
 }*/
+
+if (nome.length < 5){
+    console.log('Seu nome é muito curto.');
+}
+
+const maioridade = idade >= 18 ? 'Maior' : 'Menor'; //ternário
+console.log(`${nome} descobri que você é ${maioridade} de idade.`);
