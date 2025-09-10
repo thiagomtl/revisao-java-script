@@ -9,11 +9,14 @@ let entrada = require('prompt-sync')();
 let tabuadainicial = parseInt(entrada('Digite o valor inicial: '));
 let tabuadafinal = parseInt(entrada('Digite o valor final: '));
 
-for (let contador = 1; contador <= 10; contador++) {
-    console.log(`${tabuadainicial} x ${contador} = ${parseInt(tabuadainicial * contador)}`);
-}
+let contador = tabuadainicial;
 
-for (let i = tabuadainicial + 1; i <= tabuadafinal; i++)
-    for (let contador = 1; contador <= 10; contador++) {
-        console.log(`${i} x ${contador} = ${parseInt(i * contador)}`);
-    }   
+while (contador <= tabuadafinal) {
+    console.log(`\nTabuada do ${tabuadainicial}`);
+
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${tabuadainicial} x ${i} = ${parseInt(tabuadainicial * i)}`);
+    }
+    contador++;
+    tabuadainicial++;
+}
